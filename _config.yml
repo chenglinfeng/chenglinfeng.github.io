@@ -21,7 +21,7 @@
 title: Linfeng Cheng
 email: chenglinfeng@zju.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
-  There is only one heroism in the world: to see the world as it is and to love it.急急急
+  There is only one heroism in the world: to see the world as it is and to love it.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: XOF12138

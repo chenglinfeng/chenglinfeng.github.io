@@ -8,4 +8,6 @@ categories: jekyll update
 ## Header 2020-01-01
 ### Header 3
 
-![hello](./pic/2020-01-01-Data-Structure-ZJU/ScreenShoot.png)
+![hello](pic/2020-01-01-Data-Structure-ZJU/ScreenShot.png)
+
+![hello](https://github.com/chenglinfeng/chenglinfeng.github.io/blob/master/_posts/pic/2020-01-01-Data-Structure-ZJU/ScreenShot.png)

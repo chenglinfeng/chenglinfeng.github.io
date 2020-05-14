@@ -5,7 +5,7 @@ title:  "Head First HTML&CSS"
 date:   2019-03-17 20:16:40 +0800
 categories: jekyll update
 ---
-[TOC]
+
 
 #### HTML基本结构
 
@@ -59,7 +59,9 @@ categories: jekyll update
 
 #### 引用
 
-* <q>
+* ```
+  <q>
+  ```
 
   ```html
   how about <q>To be or not to be</q>, or <q>Where you go, there you are</q>.
@@ -68,19 +70,30 @@ categories: jekyll update
 
   
 
-* <blockquate>
-
+* ```
+<blockquate>
+  ```
+  
   ```html
   <blockquote>
       passing cars,<br>
       When you can't see.<br>
   </blockquote>
   ```
+  
+  
 
 #### 没有内容的元素：
 
-* <img>
-* <br>
+* ```
+  <img>
+  ```
+
+* ```
+  <br>
+  ```
+
+  
 
 #### 列表
 

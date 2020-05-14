@@ -8,6 +8,6 @@ categories: jekyll update
 ## Header 2020-01-01
 ### Header 3
 
-![hello](my_pics/2020-01-01-Data-Structure-ZJU/ScreenShot.png)
+![](https://raw.githubusercontent.com/chenglinfeng/chenglinfeng.github.io/master/my_pics/008.jpg)
 
-![hello](https://github.com/chenglinfeng/chenglinfeng.github.io/blob/master/my_pics/2020-01-01-Data-Structure-ZJU/ScreenShot.png)
+如何成为大佬

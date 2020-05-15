@@ -59,7 +59,7 @@ categories: jekyll update
 
 #### 引用
 
-* <q>
+* q
 
   ```html
   how about <q>To be or not to be</q>, or <q>Where you go, there you are</q>.
@@ -68,19 +68,21 @@ categories: jekyll update
 
   
 
-* <blockquate>
+* blockquate
 
-  ```html
-  <blockquote>
-      passing cars,<br>
-      When you can't see.<br>
-  </blockquote>
-  ```
+```html
+<blockquote>
+    passing cars,<br>
+    When you can't see.<br>
+</blockquote>
+```
 
-#### 没有内容的元素：
 
-* <img>
-* <br>
+
+#### 没有内容的元素
+
+* img
+* br
 
 #### 列表
 

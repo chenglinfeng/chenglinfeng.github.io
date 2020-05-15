@@ -1,0 +1,158 @@
+---
+
+layout: post
+title:  "《python编程——从入门到实践》学习笔记"
+date:   2019-08-01 20:16:40 +0800
+categories: jekyll update
+---
+
+#### 列表（list）
+
+* 定义： l = [ , , , ], l[0:2]
+* 删除: del、pop()、remove()
+* 排序：l.sort() （永久排序）、sorted()（临时排序）
+* 遍历：for magician in magicians:
+                    print(magician.title())（首字母大写）
+* 创建数值列表：num = list(range(2,11,2))
+
+#### 元组（tuple）
+
+* 定义：不可变的列表  ( , , , )
+
+#### if语句
+
+```python
+  if car == 'bmw':
+         ...
+    elif car == 'audi':
+         ...
+    else:
+         ...
+```
+
+#### 字典（Dictionary）
+
+* 定义: 键值对 dic = {'color': green, 'points': 5} 、{}
+*  访问：dic['color']
+* 添加：dic['positon'] = 0
+* 删除：del dic['color']
+*  遍历：
+
+```python
+for key, value in dic.items():
+    print(key, value)
+for key in dic.keys():
+for value in dic.values():
+```
+
+
+
+* 字典列表：dic1 = { : , : }, dic2 = { : , : } dic_list = [dic1, dic2]
+* 在字典中存储列表：dic = { : , : [ , , ]}
+* 在字典中存储字典：dic = { :{ : , : }, :{ : , : }}
+
+#### 集合（set）
+
+* 定义：无序且元素唯一的容器，类似字典，但只有键没有值
+* 示例： {1,2,3}
+
+#### 用户输入
+
+```python
+age = input("Please input your age: ") （默认为字符串）
+int(age)
+```
+
+
+
+#### while循环
+
+```python
+while k < 5:
+    break
+```
+
+#### 函数
+
+```python
+## 定义
+def func(pet_name, animal_type='dog',master=' '): #animal_type默认，master可选
+    return ...
+
+# 传递任意数量的实参
+def make_pizza(size, *topping):
+    print(topping)
+    
+#  将函数存储在模块中
+from module_name（文件名）(import function_name（函数名）)  as f（模块/函数别名）
+from module_name import *
+（PS: 函数<模块<包）
+    
+# 函数编写指南：给形参指定默认值时，等号两边不要有空格，函数调用时关键字实参也应遵循此规定
+```
+
+#### 类：
+*  __init__(): 类中的函数称为方法，能通过实例访问的变量称为属性
+* 类的导入：from module_name（模块/文件名） import class_name（类名）
+* 导入模块内所有类： from module_name import * /import module_name
+* 在一个模块中导入另一个模块：一个模块中的类依赖于另一模块中的类
+
+类编码风格：
+
+* 类名应采用驼峰命名法，类中每个单词首字母大写，而不用下划线
+* 实例名和模块名都应小写，并在单词之间加上下划线
+* 对于每个类，都应紧跟在类定义后面包含一个文档字符串。这种文档字符串简要的描述类的功能，并遵循编写函数的文档字符串时采用的格式约定
+* 每个模块也都包含一个文档字符串，对其中的类可用于做什么进行描述
+* 在类中，可使用一个空行来分割方法；在模块中，可使用两个空行来分割类
+* 同时导入标准库中的模块和自编写的模块时，先编写导入标准库模块的import语句，再添加一个空行，然后编写自写模块的import语句
+
+#### 异常（tradeback）
+
+```python
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You can't divide by zero! ") or pass
+```
+
+
+
+#### 存储数据
+
+```python
+import json
+numbers = [ , , , ]
+filename = "numbers.json"
+with open(filename,'w') as f_obj:
+    json.dump(numbers, f_obj) （存成JSON数据）
+with open(filename) as f_obj:
+    numbers = json.load(f_obj) （读取JSON数据）
+```
+
+
+
+
+#### 测试代码：unittest.TestCase
+
+```python
+import unittest
+from name_function import get_formatted_name
+
+class NameTestCase(unittest.TestCase):
+     """测试name_function.py"""
+
+     def test_first_last_name(self):
+         """能够正确处理像Janis Joplin这样的姓名吗"""
+         formatted_name = get_formatted_name('Janis',  'Joplin')
+         self.assertEqual(formatted_name, 'Janis Joplin')
+             
+     def test_first_last_middle_name(self):
+         """能够正确处理像Wolfgang Amadeus Mozart这样的姓名吗"""
+         formatted_name = get_formatted_name('wolfgang',  'mozart', 'amadeus')
+         self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')
+
+unittest.main()
+```
+
+
+  

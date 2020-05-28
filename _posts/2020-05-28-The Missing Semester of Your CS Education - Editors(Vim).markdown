@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "2020-05-28-The Missing Semester of Your CS Education - Editors(Vim)"
+title:  "The Missing Semester of Your CS Education - Editors(Vim)"
 date:   2020-05-28 20:16:40 +0800
 categories: jekyll update
 ---
